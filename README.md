@@ -43,7 +43,7 @@ print(seq_search(len(lst),lst,10))
 * Binary Search Algorithm
 
 ```java
-# Java
+// Java
 public static index BinarySearch(int n, keyType[] S, keyType x){
     index location, low, high, mid;
     
@@ -110,7 +110,7 @@ print(binary_search(lst,4,0,len(lst)-1))
   - Recursive Algorithm
 
 ```java
-# Java
+// Java
 public static int Fib(int n){
     if(n<=1)
         return n;
@@ -133,7 +133,7 @@ def fib(n): # Recursive
   - Iterative Algorithm
 
 ```java
-# Java
+// Java
 public static int Fib2(int n){
     index i;
     int[] f=new int[n+1];
