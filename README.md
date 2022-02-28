@@ -28,6 +28,7 @@ public static index SeqSearch(int n, keyType[] S, keyType x){
 }
 ```
 ```python3
+# python3
 def seq_search(n:int, lst:list, target:int):
     for i in range(n):
         if lst[i]==target:
