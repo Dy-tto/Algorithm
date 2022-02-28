@@ -18,7 +18,7 @@ Algorithm
 * Sequential Search Algorithm
 
 ```java
-# Java
+// Java
 public static index SeqSearch(int n, keyType[] S, keyType x){
     index location = 1;
     while(location <= n && S[location] != x)
