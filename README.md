@@ -16,6 +16,7 @@ Algorithm
 
 ## 1-2. 효율적인 알고리즘 개발의 중요성
 * Sequential Search Algorithm
+
 ```java
 # Java
 public static index SeqSearch(int n, keyType[] S, keyType x){
@@ -27,6 +28,7 @@ public static index SeqSearch(int n, keyType[] S, keyType x){
     return location;
 }
 ```
+
 ```python3
 # python3
 def seq_search(n:int, lst:list, target:int):
@@ -37,7 +39,9 @@ def seq_search(n:int, lst:list, target:int):
 lst=[1,5,7,9,2,4,3]
 print(seq_search(len(lst),lst,10))
 ```
+
 * Binary Search Algorithm
+
 ```java
 # Java
 public static index BinarySearch(int n, keyType[] S, keyType x){
@@ -59,6 +63,7 @@ public static index BinarySearch(int n, keyType[] S, keyType x){
     return location;
 }
 ```
+
 ```python3
 # python3
 def binary_search(lst,target): # Iterative
@@ -78,6 +83,7 @@ def binary_search(lst,target): # Iterative
 lst=[1,2,3,4,5,6]
 print(binary_search(lst,4))    
 ```
+
 ```python3
 # python3
 def binary_search(lst,target,start,end): # Recursive
@@ -102,6 +108,7 @@ print(binary_search(lst,4,0,len(lst)-1))
 * Fibonacci Sequence
 <img width="645" alt="스크린샷 2022-02-28 오후 7 27 59" src="https://user-images.githubusercontent.com/59719632/155967348-c210d34b-5a70-43f0-8a52-bae93dfbe282.png">
   - Recursive Algorithm
+
 ```java
 # Java
 public static int Fib(int n){
@@ -124,6 +131,7 @@ def fib(n): # Recursive
 <img width="597" alt="스크린샷 2022-02-28 오후 7 30 38" src="https://user-images.githubusercontent.com/59719632/155967711-755dd478-5ca6-4325-9996-8b233a2069b7.png">
 
   - Iterative Algorithm
+
 ```java
 # Java
 public static int Fib2(int n){
@@ -139,6 +147,7 @@ public static int Fib2(int n){
     return f[n];
 }
 ```
+
 ```python3
 # python3
 def fib(n): # Iterative ( Dynamic-Programming)
@@ -149,6 +158,7 @@ def fib(n): # Iterative ( Dynamic-Programming)
         dp[i]=dp[i-1]+dp[i-2]
     return dp[n]
 ```
+
 <img width="268" alt="스크린샷 2022-02-28 오후 7 48 48" src="https://user-images.githubusercontent.com/59719632/155970310-26fa2123-3206-4c8f-bff9-7df25a98dfef.png">
 
 <img width="583" alt="스크린샷 2022-02-28 오후 7 49 30" src="https://user-images.githubusercontent.com/59719632/155970401-6a2c4955-91c8-4f66-99ed-cb9b5bdd435a.png">
