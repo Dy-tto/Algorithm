@@ -273,3 +273,44 @@ Input Size가 충분히 클 때 알고리즘이 어떻게 수행되는지 관심
 
 <img width="400" alt="스크린샷 2022-03-01 오후 3 43 01" src="https://user-images.githubusercontent.com/59719632/156118639-ca8d14bd-7281-4931-9d2b-a7795f4cf3e5.png">
 
+* **Big O**
+  - O(f(n)) is the set of complexity functions g(n)
+for which there exists some positive **real constant c** and **some non\-negative integer N**
+  - dim g(n) <= dim f(n)
+
+<img width="400" alt="스크린샷 2022-03-01 오후 4 02 14" src="https://user-images.githubusercontent.com/59719632/156120827-fdfd4ff0-ac0e-495a-af01-b4cf222f0d20.png">
+
+
+* **Omega(Ω)**
+  - dim g(n) >= dim f(n)
+ 
+<img width="557" alt="스크린샷 2022-03-01 오후 4 07 00" src="https://user-images.githubusercontent.com/59719632/156121402-010927cc-b505-4fd5-8a12-ea0f7046e18f.png">
+
+* **Theta(θ)**
+  - Ω(f(n)) <= dim g(n) <= O(f(n))
+
+<img width="564" alt="스크린샷 2022-03-01 오후 4 08 55" src="https://user-images.githubusercontent.com/59719632/156121659-209c88ed-74b0-432f-902e-306d88a03013.png">
+
+* **small o**
+  - O(f(n))과 거의 비슷하지만 small o는 n이 무한대로 커질 때만 사용
+  - g(n)의 절대값에 어떤 작은 양의 숫자를 곱해도 f(n)보다는 크게되는 순간이 x를 키우다보면 언젠가는 나타난다.
+  - small o가 성립하면 Big O도 성립한다.
+ 
+<img width="161" alt="스크린샷 2022-03-01 오후 4 18 19" src="https://user-images.githubusercontent.com/59719632/156122844-7bd5576f-0d69-40c8-80ce-87cc4d507e5f.png">
+  
+  - Exponential이 Factorial보다 느리게 증가함 증명
+  
+<img width="586" alt="스크린샷 2022-03-01 오후 4 25 48" src="https://user-images.githubusercontent.com/59719632/156123933-49408f0e-6155-4486-a2a2-8b7447a960f0.png">
+
+  - 로피탈 정리 이용한 **small o** 증명
+
+<img width="493" alt="스크린샷 2022-03-01 오후 4 25 56" src="https://user-images.githubusercontent.com/59719632/156123950-7ec6d0bc-55ac-4116-bd85-684ee07bfff8.png">
+
+
+* Properties of Order
+
+<img width="400" alt="스크린샷 2022-03-01 오후 4 22 48" src="https://user-images.githubusercontent.com/59719632/156123481-39116389-d0a4-48bf-ba62-9de2d919f76f.png">
+
+* Using a Limit to Determine Order
+
+<img width="454" alt="스크린샷 2022-03-01 오후 4 23 32" src="https://user-images.githubusercontent.com/59719632/156123545-358a3bf5-21b1-4ca1-b608-a467cb8cb868.png">
