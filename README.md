@@ -178,10 +178,97 @@ def fib(n): # Iterative ( Dynamic-Programming)
 * Time Complexity (시간 복잡도)
   - The determination of how many times the basic operation is don for each value of the input size.
     + 순차 탐색 알고리즘의 worst case는 **n**번 비교하는 것이다.
-    
+
+* Types of Time Complexity Analysis
+  - Sum of **n** numbers
+
+```java
+// java
+int sum(int n, keyType[] S){
+    int i=0;
+    int total=0;
+    while(++i<=n)
+        total=total+S[i] # + 연산
+    return total;
+}
+```
+
+```python3
+# python3
+def sum(n:int, S:list):
+    total=0
+    for i in range(n):
+        total+=S[i]
+    return total
+```
+
+  - Sequential Search for **x**
 
 
+```java
+// java
+int SeqSearch(int n, keyType[] S, keyType x){
+    location = 1;
+    while(location <= n && S[location] != x) # != 비교 연산
+        location++;
+    if(location>n)
+        location = 0;
+    return location;
+```
 
+```python3
+# python3
+def seq_search(n:int, S:list, x:int){
+    for location in range(n):
+        if S[location]==x:
+            break
+    if(location>=n)
+        location = -1;
+    return location;
+```
 
+<img width="604" alt="스크린샷 2022-03-01 오후 3 12 24" src="https://user-images.githubusercontent.com/59719632/156114996-4eb033a5-7928-435f-952d-1718ca3508f2.png">
 
+  - Every Case
+    + Size가 **n**인 모든 인스턴스에 대해 **basic operation**이 동일한 횟수로 수행될 때 적용 가능
+  - Non-Every case
+    + Best Case : the **minimum** of times
+    + Worst Case : the **maximum** of times
+    + Average Case : the **average** of times
+
+  - Example: Sequential Search
+    + Basic Operation : **Comparison**
+    + Input Size : **n**, the array size
+    + Best Case : 1
+    + Worst Case : n
+    + Average Case : **p**를 **target**이 배열에 있을 확률이라고 하면, p\*(k번째에서 찾을 확률) + (1-p)\*(끝까지 못 찾을 확률)
+
+<img width="572" alt="스크린샷 2022-03-01 오후 3 24 06" src="https://user-images.githubusercontent.com/59719632/156116295-fb17545d-d1a3-4418-bfc0-c329841b10d5.png">
+
+  - Considering Overhead Instructions
+    + T(n)=n\*(1000\*t)
+    + T2(n)=n^2\*(1\*t)
+      * T2(n) 알고리즘이 T(n) 보다 n<1000 일 때 더 낫다. n의 값이 클 경우 T(n)이 더 낫다.
+
+## 1-4. Order
+* Complexity Function
+  - any function from. the **non\-negative integers** to the **non\-negative real** numbers
+  - ex) n, log n, n^2 + n/2
+ 
+* Complextiy of an Algorithm
+  - the complexity function indicating **how many times** the basic operation.
+
+* Linear Time Algorithm
+  - O(n)
+  - ex) Worst case of Sequential Search with n items.
+ 
+* Quadratic Time Algorithm
+  - O(n^2)
+  - ex) Average case of Bubble sort with n items.
+
+Input Size가 충분히 클 때 알고리즘이 어떻게 수행되는지 관심이 있다.
+
+|<img width="592" alt="스크린샷 2022-03-01 오후 3 42 45" src="https://user-images.githubusercontent.com/59719632/156118442-8690ad49-72b1-4cb0-b962-cdbeb83570de.png">|<img width="610" alt="스크린샷 2022-03-01 오후 3 42 52" src="https://user-images.githubusercontent.com/59719632/156118462-811714c3-06e9-439a-81ff-53be5f13f56e.png">|
+
+<img width="598" alt="스크린샷 2022-03-01 오후 3 43 01" src="https://user-images.githubusercontent.com/59719632/156118639-ca8d14bd-7281-4931-9d2b-a7795f4cf3e5.png">
 
