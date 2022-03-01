@@ -298,11 +298,11 @@ for which there exists some positive **real constant c** and **some non\-negativ
  
 <img width="161" alt="스크린샷 2022-03-01 오후 4 18 19" src="https://user-images.githubusercontent.com/59719632/156122844-7bd5576f-0d69-40c8-80ce-87cc4d507e5f.png">
   
-  - Exponential이 Factorial보다 느리게 증가함 증명
+   - Exponential이 Factorial보다 느리게 증가함 증명
   
 <img width="586" alt="스크린샷 2022-03-01 오후 4 25 48" src="https://user-images.githubusercontent.com/59719632/156123933-49408f0e-6155-4486-a2a2-8b7447a960f0.png">
 
-  - 로피탈 정리 이용한 **small o** 증명
+   - 로피탈 정리 이용한 **small o** 증명
 
 <img width="493" alt="스크린샷 2022-03-01 오후 4 25 56" src="https://user-images.githubusercontent.com/59719632/156123950-7ec6d0bc-55ac-4116-bd85-684ee07bfff8.png">
 
