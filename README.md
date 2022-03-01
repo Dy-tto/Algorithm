@@ -268,6 +268,7 @@ def seq_search(n:int, S:list, x:int){
 
 Input Size가 충분히 클 때 알고리즘이 어떻게 수행되는지 관심이 있다.
 
+|:-:|:-:|
 |<img width="592" alt="스크린샷 2022-03-01 오후 3 42 45" src="https://user-images.githubusercontent.com/59719632/156118442-8690ad49-72b1-4cb0-b962-cdbeb83570de.png">|<img width="610" alt="스크린샷 2022-03-01 오후 3 42 52" src="https://user-images.githubusercontent.com/59719632/156118462-811714c3-06e9-439a-81ff-53be5f13f56e.png">|
 
 <img width="598" alt="스크린샷 2022-03-01 오후 3 43 01" src="https://user-images.githubusercontent.com/59719632/156118639-ca8d14bd-7281-4931-9d2b-a7795f4cf3e5.png">
